@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pig_Latin_Translator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Pig Latin Translator");
+            Console.WriteLine(" Please input a word to Translate");
+
+            string input = Console.ReadLine();
+
+            input = input.ToLower();
+            Console.WriteLine(input);
+            char[] letter = input.ToCharArray();
+
+            Console.WriteLine("Substring: {0}", input);
+            Console.WriteLine("::BEFORE::");
+            Console.WriteLine(input);
+
+            // Replace word (and following space) with a new word.
+            // ... We assign to the Replace method's result.
+            string output = input.Replace("key ", "keyword ");
+            Console.WriteLine("::AFTER::");
+            Console.WriteLine(output);
+
+            char firstletter = letter[0];
+            input = input + "way";
+            Console.WriteLine(letter);
+
+
+            string cut;
+            string name = input;
+            cut = name.Substring(0, 4);
+            Console.WriteLine(cut);
+
+            {
+                
+                {
+                   
+                }
+            }
+        }
+    }
+}
